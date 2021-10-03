@@ -13,11 +13,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.getstartedbutton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.getstartedcustomer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), SignupActivity.class));
             }
         });
+
+        findViewById(R.id.getstartedadvertisor).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), SignupAdvertiser.class));
+            }
+        });
+
     }
 }
