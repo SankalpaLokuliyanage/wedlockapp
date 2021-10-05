@@ -33,7 +33,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginTop="60dp"
-        android:text="GET STARTED AS ADVERTISER"
+        android:text="GET STARTED AS COMPANY"
         android:textSize="16dp"
         android:background="@color/red"
         android:clickable="true"
