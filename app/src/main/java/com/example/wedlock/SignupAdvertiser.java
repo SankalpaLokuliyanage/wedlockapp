@@ -2,7 +2,9 @@ package com.example.wedlock;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -24,5 +26,12 @@ public class SignupAdvertiser extends AppCompatActivity {
         adapter.setDropDownViewResource(R.layout.signup_dropdown_item);
 
         spinner.setAdapter(adapter);
+
+        findViewById(R.id.signInDirect).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
     }
 }
